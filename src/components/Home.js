@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import HomeHeader from './HomeHeader';
 import HomeThreeColumns from './HomeThreeColumns';
 
@@ -8,6 +8,10 @@ const Home = () => {
         <div>
             <HomeHeader />
             <HomeThreeColumns />
+
+
+            <Link to="/login">Oddaj rzeczy</Link>
+            <Link to="/register">Zorganizuj zbiórkę</Link>
         </div>
     );
 };
